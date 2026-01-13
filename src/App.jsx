@@ -1,13 +1,12 @@
 import { useEffect, useState } from "react";
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import MainAboutPage from "./NavPages/MainAboutPage";
+import MainContacts from "./NavPages/MainContacts";
+import MainServices from "./NavPages/MainServices";
 import CursorFollower from "./components/CurserPointer";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
-import AboutUs from "./page/AboutUs";
-import Hero from "./page/Hero";
-import InteractiveMap from "./page/Location";
-import Services from "./page/Services";
-import VisionAndClients from "./page/Vision";
+import LeandingPage from "./page/LeandingPage";
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -25,13 +24,13 @@ function App() {
       <div className="min-h-screen bg-gray-50 dark:bg-gray-900">
         <CursorFollower />
         <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
-        <main className="pt-0">
-          <Hero />
-          <AboutUs />
-          <Services />
-          <VisionAndClients />
-          <InteractiveMap />
-        </main>
+        <Routes>
+          <Route path="/" element={<LeandingPage />} />
+          <Route path="/about" element={<MainAboutPage />} />
+          <Route path="/services" element={<MainServices />} />
+          <Route path="/contact" element={<MainContacts />} />
+        </Routes>
+
         <Footer />
       </div>
     </BrowserRouter>
