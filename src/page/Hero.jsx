@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import bgImage from "../assets/gallary/5.jpeg";
 
 const Hero = () => {
   return (
@@ -7,13 +8,12 @@ const Hero = () => {
       <div
         className="absolute inset-0 bg-cover bg-center z-0"
         style={{
-          backgroundImage:
-            'url("https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=1920&q=80")',
+          backgroundImage: `url(${bgImage})`,
         }}
       ></div>
 
       {/* Overlay - Light in light mode, dark in dark mode */}
-      <div className="absolute inset-0 bg-black/70 dark:bg-black/70 z-0"></div>
+      <div className="absolute inset-0 bg-black/60 dark:bg-black/60 z-0"></div>
 
       <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col lg:flex-row items-center justify-between min-h-screen py-20 gap-12">

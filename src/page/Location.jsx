@@ -360,7 +360,7 @@ const InteractiveMap = () => {
 
         {/* Selected City Info */}
         {selectedCity && (
-          <div className="mt-8 max-w-2xl mx-auto bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-8 text-white shadow-2xl transform transition-all duration-500 animate-fadeIn">
+          <div className="mt-8 mb-10 max-w-2xl mx-auto bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-8 text-white shadow-2xl transform transition-all duration-500 animate-fadeIn">
             <div className="flex items-start gap-4">
               <div className="bg-white/20 p-4 rounded-xl backdrop-blur-sm">
                 <svg
@@ -383,7 +383,7 @@ const InteractiveMap = () => {
                   />
                 </svg>
               </div>
-              <div className="flex-1">
+              <div className="flex-1 ">
                 <h3 className="text-2xl font-bold mb-2">
                   {selectedCity}{" "}
                   {cities.find((c) => c.name === selectedCity)?.isMain &&

@@ -1,11 +1,13 @@
 import { useEffect, useState } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import MainAboutPage from "./NavPages/MainAboutPage";
+import AboutUsSection from "./NavPages/MainAboutPage";
 import MainContacts from "./NavPages/MainContacts";
-import MainServices from "./NavPages/MainServices";
+import ServicesSection from "./NavPages/MainServices";
+import OurProcess from "./NavPages/OurProcess";
 import CursorFollower from "./components/CurserPointer";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
+import SingleServicePage from "./components/services/SingleServices";
 import LeandingPage from "./page/LeandingPage";
 
 function App() {
@@ -26,8 +28,10 @@ function App() {
         <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
         <Routes>
           <Route path="/" element={<LeandingPage />} />
-          <Route path="/about" element={<MainAboutPage />} />
-          <Route path="/services" element={<MainServices />} />
+          <Route path="/about" element={<AboutUsSection />} />
+          <Route path="/services" element={<ServicesSection />} />
+          <Route path="/services/:slug" element={<SingleServicePage />} />
+          <Route path="/ourProcess" element={<OurProcess />} />
           <Route path="/contact" element={<MainContacts />} />
         </Routes>
 

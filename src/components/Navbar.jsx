@@ -1,6 +1,6 @@
 import { Menu, Moon, Sun, X } from "lucide-react";
 import { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import Mainlogo from "../assets/mainlogo.png";
 
 export default function Navbar({ darkMode, setDarkMode }) {
@@ -11,6 +11,7 @@ export default function Navbar({ darkMode, setDarkMode }) {
     { name: "About", path: "/about" },
     { name: "Services", path: "/services" },
     { name: "Contact", path: "/contact" },
+    { name: "OurProcess", path: "/ourProcess" },
   ];
 
   return (
@@ -47,13 +48,13 @@ export default function Navbar({ darkMode, setDarkMode }) {
             ))}
 
             {/* WhatsApp CTA */}
-            <a
-              href="https://wa.me/966000000000"
+            <Link
+              to="https://wa.me/message/J5WYTIYSI55ZL1"
               target="_blank"
               className="px-4 py-2 rounded-lg bg-blue-600 text-white text-sm font-medium hover:bg-blue-700 transition"
             >
               WhatsApp
-            </a>
+            </Link>
 
             {/* Dark Mode */}
             <button
