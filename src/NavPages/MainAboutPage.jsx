@@ -127,9 +127,7 @@ export default function AboutUsSection({ darkMode = false }) {
 
   return (
     <div
-      className={`w-full transition-colors duration-300 ${
-        darkMode ? "bg-slate-900" : "bg-white"
-      }`}
+      className={`w-full transition-colors duration-300 bg-white dark:bg-slate-900 `}
     >
       {/* Hero Section with Overlay */}
       <div className="relative w-full h-96 md:h-[500px] overflow-hidden">
@@ -235,9 +233,7 @@ export default function AboutUsSection({ darkMode = false }) {
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 mb-20">
           <div className="space-y-6">
             <h2
-              className={`text-3xl md:text-4xl lg:text-5xl font-bold leading-tight ${
-                darkMode ? "text-white" : "text-slate-900"
-              }`}
+              className={`text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-slate-800 dark:text-slate-100`}
             >
               Empowering Industries with
               <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
@@ -249,18 +245,14 @@ export default function AboutUsSection({ darkMode = false }) {
               className={`w-20 h-1 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full`}
             />
             <p
-              className={`text-lg md:text-xl leading-relaxed ${
-                darkMode ? "text-slate-300" : "text-slate-600"
-              }`}
+              className={`text-lg md:text-xl leading-relaxed  text-slate-600 dark:text-slate-300`}
             >
               Based in the heart of Jeddah, we are Saudi Arabia's premier
               manpower supply company, dedicated to connecting exceptional
               talent with leading organizations across the Kingdom.
             </p>
             <p
-              className={`text-lg leading-relaxed ${
-                darkMode ? "text-slate-400" : "text-slate-600"
-              }`}
+              className={`text-lg leading-relaxed  text-slate-600 dark:text-slate-400`}
             >
               For over 15 years, we've been the trusted bridge between skilled
               professionals and ambitious companies. Our commitment to
@@ -270,9 +262,7 @@ export default function AboutUsSection({ darkMode = false }) {
               and commercial enterprises.
             </p>
             <p
-              className={`text-lg leading-relaxed ${
-                darkMode ? "text-slate-400" : "text-slate-600"
-              }`}
+              className={`text-lg leading-relaxed text-slate-600 dark:text-slate-400`}
             >
               We don't just supply workers—we build lasting partnerships. Every
               placement is backed by rigorous screening, comprehensive training,
@@ -307,16 +297,12 @@ export default function AboutUsSection({ darkMode = false }) {
         <div className="mb-20">
           <div className="text-center mb-12">
             <h3
-              className={`text-3xl md:text-4xl font-bold mb-4 ${
-                darkMode ? "text-white" : "text-slate-900"
-              }`}
+              className={`text-3xl md:text-4xl font-bold mb-4  text-slate-900 dark:text-white`}
             >
               Why Choose Us
             </h3>
             <p
-              className={`text-lg md:text-xl ${
-                darkMode ? "text-slate-400" : "text-slate-600"
-              }`}
+              className={`text-lg md:text-xl text-slate-600 dark:text-slate-400 `}
             >
               Our commitment to excellence sets us apart
             </p>
