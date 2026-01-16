@@ -16,8 +16,8 @@ const Footer = () => {
 
   const footerLinks = {
     company: [
-      { name: "About Us", href: "#about" },
-      { name: "Our Services", href: "#services" },
+      { name: "About Us", href: "/about" },
+      { name: "Our Services", href: "/services" },
       { name: "Our Clients", href: "#clients" },
       { name: "Vision 2030", href: "#vision" },
       { name: "Careers", href: "#careers" },
@@ -30,7 +30,7 @@ const Footer = () => {
       { name: "Telecom Solutions", href: "#telecom" },
     ],
     support: [
-      { name: "Contact Us", href: "#contact" },
+      { name: "Contact Us", href: "/contact" },
       { name: "FAQ", href: "#faq" },
       { name: "Privacy Policy", href: "#privacy" },
       { name: "Terms of Service", href: "#terms" },

@@ -72,7 +72,7 @@ const Hero = () => {
             <div className="bg-blue-600 dark:bg-blue-700 rounded-lg shadow-2xl overflow-hidden">
               <div className="p-6 space-y-1">
                 {[
-                  "Manpower Supply & Management Service",
+                  "Manpower Supply & Management Services",
                   "Telecom Service & Solutions",
                   "Information Technology",
                   "Construction & Maintenance",

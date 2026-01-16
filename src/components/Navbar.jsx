@@ -25,7 +25,7 @@ export default function Navbar({ darkMode, setDarkMode }) {
               alt="Ocean Flower Company"
               className="h-20 w-auto"
             />
-            <span className="font-semibold text-lg text-gray-800 dark:text-white"></span>
+            <span className="font-semibold text-lg   text-gray-800 dark:text-white"></span>
           </div>
 
           {/* Desktop Nav */}
@@ -95,7 +95,7 @@ export default function Navbar({ darkMode, setDarkMode }) {
             ))}
 
             <a
-              href="https://wa.me/966000000000"
+              href="https://wa.me/message/J5WYTIYSI55ZL1"
               className="block text-center px-4 py-2 rounded-lg bg-blue-600 text-white text-sm font-medium"
             >
               WhatsApp
