@@ -82,27 +82,28 @@ export default function Navbar({ darkMode, setDarkMode }) {
       {/* Mobile Menu */}
       {open && (
         <div className="md:hidden bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-700">
-          <div className="px-4 py-4 space-y-4">
+          <div className=" px-4 py-4 space-y-4 flex flex-col items-center">
             {navLinks.map((link) => (
               <NavLink
                 key={link.path}
                 to={link.path}
                 onClick={() => setOpen(false)}
-                className="block text-gray-700 dark:text-gray-300 text-sm font-medium"
+                className=" text-gray-700 dark:text-gray-300 text-sm font-medium text-center"
               >
                 {link.name}
               </NavLink>
             ))}
 
-            <div>
+            <div className="w-full">
               <a
                 href="https://wa.me/message/J5WYTIYSI55ZL1"
                 target="_blank"
-                className="px-4 py-2 mx-3 my-3 rounded-lg bg-blue-600 text-white text-sm font-medium hover:bg-blue-700 transition"
+                className="w-full flex justify-center items-center py-2 my-2 rounded-lg bg-blue-600 text-white text-sm font-medium hover:bg-blue-700 transition"
               >
                 WhatsApp
               </a>
             </div>
+
             <button
               onClick={() => setDarkMode(!darkMode)}
               className="w-full flex justify-center gap-2 items-center p-2 rounded-lg border border-gray-300 dark:border-gray-600"
@@ -113,9 +114,9 @@ export default function Navbar({ darkMode, setDarkMode }) {
                 <Moon size={16} />
               )}
               {darkMode ? (
-                <span className="text-sm text-white">Dark Mode</span>
+                <span className="text-sm text-white">Light Mode</span>
               ) : (
-                <span className="text-sm text-black">Light Mode</span>
+                <span className="text-sm text-black">Dark Mode</span>
               )}
             </button>
           </div>
