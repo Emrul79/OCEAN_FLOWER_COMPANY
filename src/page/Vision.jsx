@@ -1,6 +1,8 @@
 import { useEffect, useRef, useState } from "react";
 
 import Clients from "../assets//clients/adada&kabbani.png";
+import Mira from "../assets/clients/mira.png";
+import Reef from "../assets/clients/reef.jpg";
 import Vision from "../assets/vision.webp";
 
 const ClientsCarousel = ({ clients }) => {
@@ -140,7 +142,7 @@ const VisionAndClients = () => {
     {
       id: 2,
       name: "SABIC",
-      logo: Clients,
+      logo: Mira,
     },
     {
       id: 3,
@@ -150,7 +152,7 @@ const VisionAndClients = () => {
     {
       id: 4,
       name: "Aramco Trading",
-      logo: Clients,
+      logo: Mira,
     },
     {
       id: 5,
@@ -160,7 +162,7 @@ const VisionAndClients = () => {
     {
       id: 6,
       name: "KAEFER",
-      logo: Clients,
+      logo: Reef,
     },
     {
       id: 7,
@@ -170,7 +172,7 @@ const VisionAndClients = () => {
     {
       id: 8,
       name: "Larsen & Toubro",
-      logo: Clients,
+      logo: Reef,
     },
   ];
 
