@@ -37,9 +37,7 @@ export default function ManpowerTimeline({ darkMode = false }) {
 
   return (
     <div
-      className={`w-full py-16 sm:py-24 lg:py-32 transition-colors duration-300 ${
-        darkMode ? "bg-slate-900" : "bg-white"
-      }`}
+      className={`w-full py-16 sm:py-24 lg:py-32 transition-colors duration-300 dark:bg-slate-900 dark:text-white `}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header Section */}
@@ -51,7 +49,7 @@ export default function ManpowerTimeline({ darkMode = false }) {
           >
             How We Supply{" "}
             <span className="bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 bg-clip-text text-transparent">
-              Top Talent
+              Top Talents
             </span>
           </h1>
           <p
