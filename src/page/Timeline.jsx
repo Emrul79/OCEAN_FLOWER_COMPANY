@@ -43,9 +43,7 @@ export default function ManpowerTimeline({ darkMode = false }) {
         {/* Header Section */}
         <div className="text-center mb-16 sm:mb-20 lg:mb-28">
           <h1
-            className={`text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold mb-6 transition-colors duration-300 ${
-              darkMode ? "text-white" : "text-slate-900"
-            }`}
+            className={`text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold mb-6 transition-colors text-slate-900 dark:text-white duration-300`}
           >
             How We Supply{" "}
             <span className="bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 bg-clip-text text-transparent">
@@ -53,9 +51,7 @@ export default function ManpowerTimeline({ darkMode = false }) {
             </span>
           </h1>
           <p
-            className={`text-lg sm:text-xl lg:text-2xl max-w-4xl mx-auto leading-relaxed transition-colors duration-300 ${
-              darkMode ? "text-slate-300" : "text-slate-600"
-            }`}
+            className={`text-lg sm:text-xl lg:text-2xl max-w-4xl mx-auto leading-relaxed text-slate-600 dark:text-slate-300 transition-colors duration-300 `}
           >
             Our streamlined five-step process ensures you get the right
             professionals at the right time. From initial consultation to
