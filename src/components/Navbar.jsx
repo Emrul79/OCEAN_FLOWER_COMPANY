@@ -94,13 +94,15 @@ export default function Navbar({ darkMode, setDarkMode }) {
               </NavLink>
             ))}
 
-            <Link
-              to="https://wa.me/message/J5WYTIYSI55ZL1"
-              target="_blank"
-              className="px-4 py-2 rounded-lg bg-blue-600 text-white text-sm font-medium hover:bg-blue-700 transition"
-            >
-              WhatsApp
-            </Link>
+            <div>
+              <a
+                href="https://wa.me/message/J5WYTIYSI55ZL1"
+                target="_blank"
+                className="px-4 py-2 mx-3 my-3 rounded-lg bg-blue-600 text-white text-sm font-medium hover:bg-blue-700 transition"
+              >
+                WhatsApp
+              </a>
+            </div>
             <button
               onClick={() => setDarkMode(!darkMode)}
               className="w-full flex justify-center gap-2 items-center p-2 rounded-lg border border-gray-300 dark:border-gray-600"
