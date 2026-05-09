@@ -1,6 +1,8 @@
 // src/components/about/GallerySection.jsx
 import { useState } from "react";
 import Photo1 from "../assets/gallary/1.jpeg";
+import Photo10 from "../assets/gallary/10.jpeg";
+import Photo11 from "../assets/gallary/11.jpeg";
 import Photo2 from "../assets/gallary/2.jpeg";
 import Photo3 from "../assets/gallary/3.jpeg";
 import Photo4 from "../assets/gallary/4.jpeg";
@@ -15,6 +17,11 @@ const GallerySection = () => {
 
   // You can move this array to a separate data file later
   const photos = [
+    {
+      src: Photo10,
+      alt: "Skilled food factory support staff",
+    },
+
     {
       src: Photo8,
       alt: "Professional office environment in Jeddah headquarters",
@@ -40,6 +47,10 @@ const GallerySection = () => {
       alt: "General labor team at construction site",
     },
     {
+      src: Photo11,
+      alt: "Skilled hospital support staff",
+    },
+    {
       src: Photo7,
       alt: "Team coordination meeting at office",
     },
@@ -62,7 +73,7 @@ const GallerySection = () => {
         {/* Heading */}
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white">
-            Our Team in Action
+            Our Team in Actions
           </h2>
           <p className="mt-4 text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
             See our professional workforce delivering excellence across
