@@ -73,7 +73,7 @@ const GallerySection = () => {
         {/* Heading */}
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white">
-            Our Team in Actions
+            Our Team in Actionsssssssssssssssssssssss
           </h2>
           <p className="mt-4 text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
             See our professional workforce delivering excellence across

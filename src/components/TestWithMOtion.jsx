@@ -2,6 +2,8 @@
 import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import Photo1 from "../assets/gallary/1.jpeg";
+import Photo10 from "../assets/gallary/10.jpeg";
+import Photo11 from "../assets/gallary/11.jpeg";
 import Photo2 from "../assets/gallary/2.jpeg";
 import Photo3 from "../assets/gallary/3.jpeg";
 import Photo4 from "../assets/gallary/4.jpeg";
@@ -15,6 +17,11 @@ const GallerySection = () => {
   const [selectedIndex, setSelectedIndex] = useState(null); // index of selected photo
 
   const photos = [
+    {
+      src: Photo10,
+      alt: "Skilled food factory support staff",
+    },
+
     {
       src: Photo8,
       alt: "Professional office environment in Jeddah headquarters",
@@ -34,6 +41,10 @@ const GallerySection = () => {
     {
       src: Photo5,
       alt: "Industrial and factory workforce",
+    },
+    {
+      src: Photo11,
+      alt: "Skilled hospital support staff",
     },
     {
       src: Photo6,
